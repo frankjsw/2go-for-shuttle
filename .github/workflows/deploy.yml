@@ -42,13 +42,13 @@ jobs:
           FILE_PATH: ${{ secrets.FILE_PATH }}
           SUB_PATH: ${{ secrets.SUB_PATH }}
         run: |
-          echo "UUID = '${UUID:-86ecdec6-59a2-42bc-8d29-6887c0956b1e}'" >> Secrets.toml
+          echo "UUID = '${UUID:-f865421c-16d6-4750-8470-e14b961f8625}'" >> Secrets.toml
           echo "NEZHA_SERVER = '${NEZHA_SERVER}'" >> Secrets.toml
           echo "NEZHA_PORT = '${NEZHA_PORT}'" >> Secrets.toml
           echo "NEZHA_KEY = '${NEZHA_KEY}'" >> Secrets.toml
           echo "ARGO_DOMAIN = '${ARGO_DOMAIN}'" >> Secrets.toml
-          echo "ARGO_AUTH = '${ARGO_AUTH}'" >> Secrets.toml
-          echo "ARGO_PORT = '${ARGO_PORT:-8080}'" >> Secrets.toml
+          echo "ARGO_AUTH = '${ARGO_AUTH:-eyJhIjoiNjU4NTBjYjUzOTUyZjNhNTEwNThiOTEwMWVlYjMzY2QiLCJ0IjoiYTViODY3ODQtMDA1Yy00NWU0LWJmYjAtOGExN2ZiMWIyZGFhIiwicyI6Ik5XTXhPVFJrTVRFdE1EWTFOeTAwTkdFMExUZzJPR1F0WVRFeVl6QTRORE13WlRsaSJ9}'" >> Secrets.toml
+          echo "ARGO_PORT = '${ARGO_PORT:-8006}'" >> Secrets.toml
           echo "CFIP = '${CFIP:-cf.877774.xyz}'" >> Secrets.toml
           echo "CFPORT = '${CFPORT:-443}'" >> Secrets.toml
           echo "NAME = '${NAME:-Shuttle}'" >> Secrets.toml
